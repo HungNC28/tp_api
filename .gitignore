@@ -1,0 +1,10 @@
+.env
+
+/dist
+
+node_modules/
+
+.DS_Store
+# ts node dump
+/report.*.json
+/tmp

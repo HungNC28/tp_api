@@ -1,0 +1,14 @@
+runtime: nodejs14
+service: ${SERVICE_NAME}
+
+entrypoint: npm run prod
+
+env_variables:
+  DB_URL: ${DB_URL}
+  DB_NAME: ${DB_NAME}
+
+handlers:
+- url: /.*
+  secure: always
+  redirect_http_response_code: 301
+  script: auto
